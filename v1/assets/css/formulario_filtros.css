@@ -1,0 +1,90 @@
+.formulario__filtros-titulo {
+    font-size: 2.6rem;
+    color: var(--cor-azul);
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-left: 8.8rem;
+}
+
+.formulario__filtros-filtros-titulos {
+    color: var(--cor-azul);
+    font-weight: bolder;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    position: absolute;
+    left: 53.688rem;
+    height: 3rem;
+}
+
+.formulario__filtros-filtros-posicao {
+    position: absolute;
+    height: 2rem;
+    width: 28.367rem;
+    border-color: var(--cor-azul);
+    background-color: var(--cor-branca);
+    text-align: center;
+    font-weight: bolder;
+    color: var(--cor-azul);
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+}
+
+.formulario__filtros-filtros-nre-titulo {
+    width: 3.438rem;
+    top: 14.938rem;
+}
+
+.formulario__filtros-filtros-nre {
+    left: 65.813rem;
+    top: 15.25rem;
+}
+
+.formulario__filtros-filtros-municipio-titulo {
+    width: 7.625rem;
+    top: 17.313rem;
+}
+
+.formulario__filtros-filtros-municipio {
+    left: 65.813rem;
+    top: 17.75rem;
+}
+   
+.formulario__filtros-filtros-escola-titulo {
+    width: 5.125rem;
+    top: 19.563rem;
+}
+
+.formulario__filtros-filtros-escola {
+    left: 65.821rem;
+    top: 20.429rem;
+}
+
+.formulario__filtros-filtros-modalidade-titulo {
+    width: 9.063rem;
+    top: 22.063rem;
+}
+
+.formulario__filtros-filtros-modalidade {
+    left: 65.821rem;
+    top: 23.054rem;
+}
+
+.formulario__filtros-filtros-etapa-titulo {
+    width: 4.625rem;
+    top: 24.625rem;
+}
+
+.formulario__filtros-filtros-etapa {
+    left: 65.821rem;
+    top: 25.492rem;
+}
+
+.formulario__filtros-filtros-disciplina-titulo {
+    width: 7.625rem;
+    top: 27.438rem;
+}
+
+.formulario__filtros-filtros-disciplina {
+    left: 65.813rem;
+    top: 28.438rem;
+}

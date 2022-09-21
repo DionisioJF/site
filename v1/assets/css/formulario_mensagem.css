@@ -1,0 +1,134 @@
+.formulario__mensagem {
+    margin-left: 2rem;
+}
+
+.formulario__mensagem-titulo {
+    font-size: 2.6rem;
+    color: var(--cor-azul);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.formulario__mensagem__form-titulo {
+    display: block;
+    padding: 0.4rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    border-color: var(--cor-azul);
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.formulario__mensagem__form-mensagem {
+    padding-right: 6.6rem;
+    padding-left: 7rem;
+    padding-bottom: 16rem;
+    border-radius: 0.2rem;
+    border-color: var(--cor-azul);
+    resize: none;
+}
+
+.formulario__mensagem-form-lista-div, .formulario__mensagem-form-emails-quantidade-div {
+    display: flex;
+}
+
+.formulario__mensagem-form-lista, .formulario__mensagem-form-emails {
+    font-size: 1.8rem;
+    color: var(--cor-azul);
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.formulario__mensagem-form-lista-caixa {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    border-color: var(--cor-azul);
+    background-color: var(--cor-branca);
+    color: var(--cor-azul);
+    padding-top: 0.2rem;
+}
+
+.formulario__mensagem-form-imagens-div {
+    position: absolute;
+    left: 34rem;
+    top: 10rem;
+}
+
+.formulario__mensagem-form-emails-quantidade {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    color: var(--cor-azul);
+    font-weight: bolder;
+
+    border: solid 0.1rem var(--cor-azul);
+    border-radius: 0.2rem;
+}
+
+.adicionar, .imagens {
+    color: var(--cor-azul);
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.adicionar {
+    margin-top: 0.3rem;
+}
+
+.formulario__mensagem-form-imagens-url {
+    background-color: var(--cor-azul);
+    border-radius: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin-top: 1rem;
+}
+
+.formulario__mensagem-form-url-descricao {
+    color: var(--cor-branca);
+    font-weight: bolder;
+    display: block;
+    margin-top: 1rem;
+    text-align: start;
+}
+
+#picture__input {
+    color: var(--cor-branca);
+    margin-top: 0.2rem;
+}
+
+.formulario__mensagem-form-url-input-desc {
+    color: var(--cor-branca);
+    font-weight: bolder;
+    margin-top: 1.6rem;
+}
+
+.formulario__mensagem-form-url-input {
+    border-color: var(--cor-branca);
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    padding-right: 3.5rem;
+    margin-top: 0.2rem;
+}
+
+.formulario__mensagem-form-url-imagem {
+    position: absolute;
+
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+        <title>Codis sem fio</title>
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+
+        <link rel="favicon" href="./assets/img/favicon.ico">
+        
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/variaveis.css">
+        <link rel="stylesheet" href="./assets/css/hamburguer.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/principal.css">
+        <link rel="stylesheet" href="./assets/css/formulario_mensagem.css">
+        <link rel="stylesheet" href="./assets/css/formulario_filtros.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body class="corpo">
+        <header class="cabecalho">
+            <div class="cabecalho__fundo"></div>
+            <div class="cabecalho__titulos">
+                <a class="cabecalho__titulos-link" href="index.html">
+                    <h1 class="cabecalho__titulo-principal">Codis sem fio</h1>
+                    <h2 class="cabecalho__titulo-subtitulo">Plataforma de envio de email</h2>
+                    <img src="./assets/img/svg/envelope_cabecalho.svg" class="cabecalho__titulo-logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a class="menuItem liberar" href="liberar.html">Liberar</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem relatorio" href="#">Relatório</a></li>
+              </ul>
+              <button class="hamburger">
+                <element onload="hamburger.js"></element>
+                
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+              </button>
+        </header>
+
+        <main class="principal">
+            <div class="formulario__mensagem">
+                <h1 class="formulario__mensagem-titulo">Nova mensagem</h1>
+                <form class="formulario__mensagem-form">
+                    <input type="text" value="" class="formulario__mensagem__form-titulo" placeholder="Insira o titulo" autocomplete="off">
+                    <textarea value="" class="formulario__mensagem__form-mensagem" placeholder="Cole aqui o texto" autocomplete="off"></textarea>
+
+                    <div class="formulario__mensagem-form-lista-div">
+                        <p class="formulario__mensagem-form-lista">Carregar uma lista:</p>
+                        <button class="formulario__mensagem-form-lista-caixa">lista.txt</button>
+                        <img src="./assets/img/svg/carregar_lista.svg" class="formulario__mensagem-form-lista-img">
+                    </div>
+
+                    <div class="formulario__mensagem-form-emails-quantidade-div">
+                        <p class="formulario__mensagem-form-emails">Total de e-mails:</p>
+                        <p class="formulario__mensagem-form-emails-quantidade">xxxxxx</p>
+                        <img src="./assets/img/svg/total_emails.svg" class="formulario__mensagem-form-emails-img">
+                    </div>
+
+                    <div class="formulario__mensagem-form-imagens-div">
+                        <div class="formulario__mensagem-form-imagens"><p class="adicionar">Adicionar</p><p class="imagens">imagens</p></div>
+                        <div class="formulario__mensagem-form-imagens-url">
+                            <label class="formulario__mensagem-form-url-descricao">Selecione a(s) imagem(s):</label>
+                            <label class="picture" for="picture__input" tabIndex="0">
+                                <span class="picture__image"></span>
+                            </label>
+                            <input type="file" name="picture__input" id="picture__input" autocomplete="off">
+                            <p class="formulario__mensagem-form-url-input-desc">OU cole a url da(s) imagem(s):</p>
+                            <input type="url" class="formulario__mensagem-form-url-input" autocomplete="off">
+                            <img src="./assets/img/svg/adicionar_imagem.svg" class="formulario__mensagem-form-url-imagem">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="separador">
+                <div class="separador__linha">
+                    <img class="separador__linha-imagem" src="./assets/img/svg/linha_para_separar.svg">
+                 </div>
+                <button class="enviar_email">Enviar email</button>
+            </div>
+            <div class="formulario__filtros">
+                <h1 class="formulario__filtros-titulo">Filtros de envio</h1>
+                <div class="formulario__filtros-filtros">
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-nre-titulo formulario__filtros-filtros-titulos">NRE:</p>
+                            <select name="nre" class="formulario__filtros-filtros-nre formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-municipio-titulo formulario__filtros-filtros-titulos">Munícipio:</p>
+                            <select name="municipio" class="formulario__filtros-filtros-municipio formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-escola-titulo formulario__filtros-filtros-titulos">Escola:</p>
+                            <select value="" name="escola" class="formulario__filtros-filtros-escola formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>  
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-modalidade-titulo formulario__filtros-filtros-titulos">Modalidade:</p>
+                            <select value="" name="modalidade" class="formulario__filtros-filtros-modalidade formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>    
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-etapa-titulo formulario__filtros-filtros-titulos">Etapa:</p>
+                            <select value="" name="etapa" class="formulario__filtros-filtros-etapa formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>  
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-disciplina-titulo formulario__filtros-filtros-titulos">Disciplina:</p>
+                            <select value="" name="disciplina" class="formulario__filtros-filtros-disciplina formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>    
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script src="./assets/js/hamburguer.js"></script>
+</html>
